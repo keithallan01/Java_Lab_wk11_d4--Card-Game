@@ -9,7 +9,7 @@ public class CardTest {
 
     @Before
     public void before(){
-        card = new Card(SuitType.HEARTS, "five");
+        card = new Card(SuitType.HEARTS, RankType.FIVE);
     }
 
     @Test
@@ -19,6 +19,6 @@ public class CardTest {
 
     @Test
     public void hasRank(){
-        assertEquals("five", card.getRank());
+        assertEquals(RankType.FIVE, card.getRank());
     }
 }
