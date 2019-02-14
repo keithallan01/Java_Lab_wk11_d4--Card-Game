@@ -1,14 +1,14 @@
 public class Card {
 
-    private String suit;
+    private SuitType suit;
     private String rank;
 
-    public Card(String suit, String rank){
+    public Card(SuitType suit, String rank){
         this.suit = suit;
         this.rank = rank;
     }
 
-    public String getSuit(){
+    public SuitType getSuit(){
         return this.suit;
     }
 
