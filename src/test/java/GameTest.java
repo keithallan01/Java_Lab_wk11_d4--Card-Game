@@ -28,6 +28,14 @@ public class GameTest {
         assertEquals(player2, game.findWinner());
     }
 
+//    @Test
+//    public void canDealShuffledCard(){
+//            player1.takeCard(card1);
+//            player2.takeCard(card2);
+//            assertEquals(player2, game.findWinner());
+//        }
+//    }
+
 
 
 }

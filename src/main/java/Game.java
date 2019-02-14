@@ -23,8 +23,13 @@ public class Game {
         }
     }
 
-    public String itsADraw(){
-        return "It's a Draw";
+    public Player playRound(){
+        deck.shuffle();
+        player1.takeCard(deck.deal());
+        player2.takeCard(deck.deal());
+        System.out.println(player1.showCard());
+        System.out.println(player2.showCard());
+        return findWinner();
     }
 
 
