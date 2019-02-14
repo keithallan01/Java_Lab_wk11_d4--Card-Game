@@ -11,4 +11,8 @@ public class Card {
     public String getSuit(){
         return this.suit;
     }
+
+    public String getRank(){
+        return this.rank;
+    }
 }
