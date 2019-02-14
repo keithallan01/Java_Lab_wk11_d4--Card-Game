@@ -21,4 +21,5 @@ public class CardTest {
     public void hasRank(){
         assertEquals(RankType.FIVE, card.getRank());
     }
+
 }

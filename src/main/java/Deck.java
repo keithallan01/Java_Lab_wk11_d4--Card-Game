@@ -16,5 +16,14 @@ public class Deck {
         this.cardList.add(card);
     }
 
+    public void populate(){
+        for (SuitType suit : SuitType.values()){
+            for (RankType rank : RankType.values()) {
+                Card card = new Card(suit, rank);
+                this.addCard(card);
+            }
+        }
+    }
+
 
 }

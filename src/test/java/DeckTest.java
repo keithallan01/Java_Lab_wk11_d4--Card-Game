@@ -24,4 +24,10 @@ public class DeckTest {
         deck.addCard(card);
         assertEquals(1, deck.cardCount());
     }
+
+    @Test
+    public void canPopualateDeck(){
+        deck.populate();
+        assertEquals(52, deck.cardCount());
+    }
 }
