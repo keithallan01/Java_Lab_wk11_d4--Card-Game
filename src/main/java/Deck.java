@@ -12,5 +12,9 @@ public class Deck {
         return this.cardList.size();
     }
 
+    public void addCard(Card card){
+        this.cardList.add(card);
+    }
+
 
 }
