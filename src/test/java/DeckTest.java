@@ -30,4 +30,12 @@ public class DeckTest {
         deck.populate();
         assertEquals(52, deck.cardCount());
     }
+
+    @Test
+    public void dealCard(){
+        deck.populate();
+        Card mycard = deck.deal();
+//        System.out.println(mycard);
+        assertEquals(51, deck.cardCount());
+    }
 }

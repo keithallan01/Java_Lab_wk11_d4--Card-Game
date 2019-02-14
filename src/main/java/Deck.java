@@ -21,8 +21,13 @@ public class Deck {
             for (RankType rank : RankType.values()) {
                 Card card = new Card(suit, rank);
                 this.addCard(card);
+//                System.out.println(card.getSuit().toString() + card.getRank().toString());
             }
         }
+    }
+
+    public Card deal(){
+        return this.cardList.remove(0);
     }
 
 
